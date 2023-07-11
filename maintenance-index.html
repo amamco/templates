@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>منحة تحت الصيانة</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      padding: 20px;
+      font: 20px Helvetica, sans-serif;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-top: 150px;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    article {
+      display: block;
+      text-align: left;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #dc8100;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #efe8e8;
+      text-decoration: none;
+    }
+
+    .only-mobile {
+      display: none;
+    }
+
+    .main {
+      .content {
+        margin-inline-start: 200px;
+        margin-block-start: 110px;
+
+        .title {
+          font-family: Tajawal;
+          font-size: 80px;
+          font-weight: 300;
+          color: #f3f6f9;
+          margin-block-end: 40px;
+
+        }
+
+        .subTitleF {
+          font-size: 48px;
+          color: #f3f6f9;
+          margin-block-end: 96px;
+
+        }
+
+        .subTitle {
+          font-family: Tajawal;
+          font-size: 16px;
+          font-weight: 500;
+          color: #f3f6f9;
+          margin-block-end: 32px;
+
+        }
+
+        .button-area {
+          .email-input {
+            border-radius: 8px;
+            border: unset;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding-inline-start: 20px;
+            width: 426px;
+            height: 60px;
+            margin-inline-end: 16px;
+            font-size: 24px;
+
+            &::placeholder {
+              /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: white;
+              opacity: 1;
+              /* Firefox */
+
+            }
+          }
+        }
+      }
+
+      .intro-img {
+        width: 900px;
+        height: 560px;
+        object-fit: contain;
+        margin: auto;
+      }
+
+    }
+
+    @media only screen and (max-width: 1770px) {
+      .main {
+        .content {
+          margin-inline-start: 117px;
+        }
+
+        .intro-img {
+          width: 574px;
+          height: 386px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1330px) {
+      .main {
+        flex-direction: column-reverse;
+
+        .content {
+          padding-block-start: 45px;
+          margin-inline-end: unset;
+          margin: 0 auto;
+
+          .title {
+            margin-block-end: 32px;
+            font-size: 32px;
+            font-weight: 300;
+            display: none;
+          }
+
+          .subTitleF {
+            font-size: 24px;
+            font-weight: 300;
+            margin-block-end: 40px;
+            margin-inline: 56px;
+            text-align: center;
+          }
+
+          .subTitle {
+            font-size: 12px;
+            font-weight: 500;
+            margin-block-end: 16px;
+            margin-inline: auto;
+          }
+
+          .button-area {
+            gap: 16px;
+            flex-direction: column;
+            margin-inline: 50px;
+
+            .email-input {
+              height: 50px;
+              width: 100%;
+              font-size: 16px;
+              margin-inline-end: unset;
+
+              &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: white;
+                opacity: 1;
+                /* Firefox */
+
+              }
+            }
+
+            .subscriber {
+              height: 50px;
+              width: 100%;
+            }
+          }
+        }
+
+
+        .intro-img {
+          width: 308.6px;
+          height: 205.8px;
+          object-fit: contain;
+        }
+      }
+
+      .offTitle {
+        font-family: Tajawal;
+        font-size: 40px;
+        margin-inline: auto;
+        font-weight: 300;
+        color: #f3f6f9;
+        margin-block-end: 40px;
+      }
+
+      .only-mobile {
+        display: block;
+      }
+    }
+
+    .flex {
+      display: flex;
+      flex-flow: row wrap;
+
+    }
+
+    .flex-unwraper {
+      flex-wrap: unset;
+    }
+
+    .flex-column {
+      flex-flow: column wrap;
+    }
+
+
+
+    .flex-center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-space-between {
+      justify-content: space-between;
+    }
+
+    .flex-space-evenly {
+      justify-content: space-evenly;
+    }
+
+    .flex-space-around {
+      justify-content: space-around;
+    }
+
+    .part {
+      color: white;
+
+      .title {
+
+        font-family: Tajawal;
+        font-size: 22px;
+        font-weight: 500;
+        color: #f3f6f9;
+        margin-block: 48px;
+      }
+
+      .subTitle {
+        font-size: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        margin-block-end: 62px;
+        width: 579px;
+
+      }
+
+      .coop {
+        gap: 80px;
+        margin-block-end: 80px;
+
+        .karam {
+          width: 188px;
+          height: 136px;
+          object-fit: contain;
+        }
+
+        .ubt {
+          width: 211.6px;
+          height: 119.9px;
+          object-fit: contain;
+        }
+      }
+
+      .button-area {
+        .email-input {
+          border-radius: 8px;
+          border: unset;
+          background-color: rgba(255, 255, 255, 0.2);
+          color: white;
+          padding-inline-start: 20px;
+          width: 426px;
+          height: 72px;
+          margin-inline-end: 16px;
+          font-size: 24px;
+
+          &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1;
+            /* Firefox */
+
+          }
+        }
+      }
+    }
+
+    .footer {
+      bottom: 0;
+      margin-block-end: 16px;
+    }
+
+    @media only screen and (max-width: 1330px) {
+      .part {
+        .title {
+          font-size: 16px;
+          margin-block-end: 16px;
+        }
+
+        .coop {
+          gap: 80px;
+          margin-block-end: 40px;
+
+          .karam {
+            width: 77.8px;
+            height: 56px;
+            object-fit: contain;
+          }
+
+          .ubt {
+            width: 211.6px;
+            height: 119.9px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    html,
+    body {
+      background-image: linear-gradient(90deg, #3caca2, #124486 60%, #153f5f) !important;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .empty-header {
+      margin-block-end: 100px;
+    }
+
+    .header {
+      padding: 32px 75px 32px 60px;
+
+      &.shadow {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      &.fixPosition {
+
+        position: fixed;
+        width: 100vw;
+        background-color: #fafafa;
+        z-index: 10;
+
+      }
+
+      .icon {
+        width: 150.1px;
+        height: 70.8px;
+        object-fit: contain;
+        margin-inline-end: 80.7px;
+      }
+
+      div:nth-child(2) {
+        align-items: center;
+
+        .title {
+          font-size: 18px;
+          margin-inline-end: 40px;
+          padding: 0px 5px;
+          cursor: pointer;
+        }
+
+        .active {
+          padding-block-end: 8px;
+        }
+      }
+
+      .home-register {
+        height: 41px;
+
+        .login {
+          margin-inline-end: 41px;
+        }
+
+        .register {
+          height: 41px;
+        }
+
+        .menu {
+          display: none;
+        }
+      }
+
+      .icons {
+        gap: 16px;
+
+        .cart {}
+
+        .dropdown {
+          border-inline-start: solid 1px #20639b;
+          padding-inline-start: 10px;
+
+          .user {
+            width: 24px;
+            margin-inline-end: unset;
+
+          }
+
+          .arrow {
+            width: 24px;
+            margin-inline-end: unset;
+          }
+        }
+
+        .dropdownItem {
+          color: #20639b;
+        }
+
+        .danger {
+          color: #ed553b;
+
+        }
+      }
+    }
+
+
+
+    @media only screen and (max-width: 864px) {
+      .header {
+        padding: 24px 32px 32px 60px;
+
+        .icon {
+          width: 77.3px;
+          height: 21px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+
+      .icon {
+        width: 149px;
+        height: 40.6px;
+      }
+
+      .copy {
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        gap: 12px;
+        align-items: flex-end;
+      }
+
+      .icons {
+        margin-block-end: 24px;
+
+        img:nth-child(1) {
+          margin-inline-end: 24px;
+        }
+
+      }
+    }
+
+    .pyament-body {
+      gap: 8px;
+
+      .payment-image-body {
+        border-radius: 5px;
+        background-color: #f3f6f9;
+
+        .payment-image {
+          width: 24px;
+          margin: 10px;
+        }
+      }
+    }
+
+
+    @media only screen and (max-width: 864px) {
+      .footer {
+        div:nth-child(2) {
+          font-size: 14px;
+          text-align: center;
+          width: 201px;
+
+        }
+      }
+    }
+  </style>
+</head>
+
+<body dir="rtl">
+  <header class="flex flex-space-between header">
+    <div class="flex">
+      <img class="icon pointer" (click)="routeTo('')"
+        src="https://ik.imagekit.io/minnhaUat/Maintenance/logo-white.svg?updatedAt=1688988037786" alt="منحة | Minnha">
+    </div>
+  </header>
+
+  <div class="flex flex-space-between main">
+    <div class=" flex flex-column  content">
+      <div class="title "><span class="title bold">النظام تحت الصيانة</span></div>
+      <div class="subTitleF ">المنصة الأولى للدعم التشاركي للتعليم</div>
+      <!-- <div class="flex button-area">
+        <input class="email-input" placeholder="ادخل بريدك الألكتروني" [(ngModel)]="email">
+        <stander-button [status]="status" class="block subscriber" [title]="'أشترك الآن'" [paddingBlockStart]="5"
+          [type]="'white'" [width]="innerWidth>1330? 167:100" [widthType]="innerWidth>1330? 'px' : '%'" [bold]="'bold'"
+          (click)="onSubscriber()"></stander-button>
+      </div> -->
+    </div>
+
+    <img class="flex half-parent flex-center intro-img"
+      src="https://ik.imagekit.io/minnhaUat/Maintenance/106_3x.png?updatedAt=1688987911969" alt="مقدمة | intrdoucation"
+      width="">
+    <div class="offTitle only-mobile">النظام تحت الصيانة</div>
+
+  </div>
+  <div class="flex flex-column flex-center part">
+    <div class="title">شركاء النجاح</div>
+    <div class="flex coop">
+      <a  href="https://www.karam.org.sa/" target="_blank">
+        <img class="pointer karam"
+        src="https://ik.imagekit.io/minnhaUat/Maintenance/cropped-asset-4-2_3x.png?updatedAt=1688987911803">
+      </a>
+
+      <!-- <img class="pointer ubt" (click)="onNavigate('https://www.ubt.edu.sa/About/Home')"  src="/assets/icons/commingSoon/logo-blue.svg"> -->
+
+    </div>
+    <!-- <div class="empty"></div> -->
+    <footer class="flex flex-center flex-space-between footer" [ngClass]="{allbackground: allBackground}">
+      <div class="flex icons">
+        <a href="https://www.linkedin.com/company/minnha" target="_blank">
+          <img class="pointer" 
+          src="https://ik.imagekit.io/minnhaUat/Maintenance/group-1531_j7zo_TfAl.svg?updatedAt=1689086134811">
+        </a>
+        <a href="https://twitter.com/Minnha_sa"  target="_blank">
+          <img class="pointer"  src="https://ik.imagekit.io/minnhaUat/Maintenance/group-1530_3zH4kgoJ8.svg?updatedAt=1689086134809">
+
+        </a>
+      </div>
+      <div class="flex copy">
+        <div>
+          © 2023 المملكة العربية السعودية، جميع الحقوق محفوظة لمنحة
+        </div>
+        <div class="flex pyament-body">
+          <div class="payment-image-body">
+            <img class="payment-image" src="https://ik.imagekit.io/minnhaUat/Maintenance/366974_89cs6UIQP.svg?updatedAt=1689086134794" alt="mada" width="">
+          </div>
+          <div class="payment-image-body">
+            <img class="payment-image" src="https://ik.imagekit.io/minnhaUat/Maintenance/cib-visa_0t-Vz_RKk.svg?updatedAt=1689086134816" alt="visa" width="">
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+</body>
+
+</html>
